@@ -1,0 +1,98 @@
+.block1{
+    width: 296px;
+    height:150px;
+    /* border: 1px solid pink; */
+    background-color: lightblue;
+}
+
+.container{
+    position: relative;
+    left: 37%;
+    top: 113px;
+    width: 299px;
+    height: 435px;
+    border: 2px solid powderblue;
+    overflow-x:hidden;
+    overflow-y: auto;
+}
+
+ul{/*设置导航栏的框框*/
+    padding: 0px;/*将框框的padding设置为零，不然会导致框框里的内容与框边缘有间隔*/
+    position: relative;
+    left: 37%;
+    top: 125px;
+    width: 300px;
+    height: 45px;
+    border: 1px solid powderblue;
+}
+li{
+   list-style-type: none;/* 去掉li前的点 */
+    float: left;/*将li设置成做浮动，变为联动*/
+}
+a{
+    display: block;/*将a变成块状*/
+    width: 100px;/*设置块的宽度*/
+    height: 50px;/*设置块的长度*/
+    font-family: Microsoft Yahei;
+    line-height: 50px;/*设置字体在块中的高度*/
+    background-color: #959999;
+    margin: 0px 0px;/*块里的高宽通过margin设置*/
+    color: #fff;
+    text-align: center;/*字体居中*/
+    text-decoration: none;/*去掉下划线*/
+    font-size: 15px;
+}
+a:hover{
+background-color: #a5aaa7;
+}
+
+
+::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+
+}
+::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    background: rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+
+.image{
+    position: relative;
+    top: 25px;
+    left: 120px;
+    width: 20%;
+    height: 40%;
+    border-radius: 70%;
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    font-size: small;
+    color: white;
+}
+.setting{
+    position: relative;
+    /* border: 1px solid black; */
+    width: auto;
+    height: 20;
+    padding: 10px;
+    margin-top: 5px;
+    /* margin-top: 20px; */
+}
+
+.setting:hover{
+    color: blue;
+}
+
+.setting .arrow{
+    position: absolute;
+    right:20px;
+    top: 9px;
+}
