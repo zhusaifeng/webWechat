@@ -6,8 +6,6 @@ var Ajax=function(){
 }();
 
 var displayData=function(data){
-    console.log(data)
-    console.log(data[4])
     var parentDiv = document.getElementById("container");
     var ul = document.createElement("ul");
     ul.className = 'ul2';            //设置css样式
@@ -20,7 +18,9 @@ var displayData=function(data){
         li.appendChild(a);
         a.innerHTML=data[i];
         a.className="a2";
-        // var hr=document.createElement("hr");
-        // ul.appendChild(hr);
+        a.addEventListener("click",function(e){
+            window.location.href='/book-list/book-list.html?classify='+e.target.innerHTML
+            console.log(e.target.innerHTML)
+        })
     }
 }
