@@ -5,10 +5,21 @@
     background-color: lightblue;
 }
 
+
+.bigcontainer{
+    position: relative;
+    border: 2px solid powderblue;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 480px;
+}
+
 .container{
     position: relative;
-    left: 37%;
-    top: 113px;
     width: 299px;
     height: 435px;
     border: 2px solid powderblue;
@@ -19,8 +30,7 @@
 ul{/*设置导航栏的框框*/
     padding: 0px;/*将框框的padding设置为零，不然会导致框框里的内容与框边缘有间隔*/
     position: relative;
-    left: 37%;
-    top: 125px;
+    margin: 0;
     width: 300px;
     height: 45px;
     border: 1px solid powderblue;

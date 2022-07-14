@@ -37,19 +37,19 @@ function displayData(data) {
             // div.innerHTML = "内容简介：" + '<br/>' + data[i].bookDesc + '<br/>' + "喜欢本书的人还喜欢：";
             div.innerHTML =  data[i].bookDesc;
 
+             //设置借书按钮
+            var bottom = document.createElement("bottom");
+            parentDiv.appendChild(bottom);
+            bottom.className = "btn";
+            bottom.innerHTML = "借书";
+            bottom.addEventListener("click",function(e){
+            alert("借书成功")
+    })
+
         } else {
             continue
         }
     }
-
-    //设置借书按钮
-    var bottom = document.createElement("bottom");
-    parentDiv.appendChild(bottom);
-    bottom.className = "btn";
-    bottom.innerHTML = "借书";
-    bottom.addEventListener("click",function(e){
-        alert("借书成功")
-    })
 }
 
 
@@ -67,6 +67,11 @@ function displayRecommendData(data) {
         div2.appendChild(img);
         img.src = data[num].re[i].bookImageBig
         img.className = "img2"
+        img.id=data[num].re[i].bookId
+        img.addEventListener("click",function(e){
+            window.location.href='/book-detail/book-detail.html?bookId='+e.target.id
+            console.log(e.target.id)
+        })
     }
 }
 
