@@ -26,9 +26,8 @@ var displayData=function(data){
 }
 
 
-// $(document).ready(function(){
-//     $("li.classify").animate({
-//         height:'toggle'
-//         // height:'+=10%'
-//     });
-// });
+$(document).ready(function(){
+    $("ul.ul2").hide();
+    $("ul.ul2").slideDown(2000);
+    // $("li.classify").slideUp();
+});

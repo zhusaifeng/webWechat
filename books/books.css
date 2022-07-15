@@ -37,6 +37,10 @@
     height: 45px;
     /* border: 1px solid powderblue; */
 }
+.ul2{
+    position: relative;
+    /* visibility: hidden; */
+}
 .li{
    list-style-type: none;/* 去掉li前的点 */
     float: left;/*将li设置成做浮动，变为联动*/
