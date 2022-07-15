@@ -26,6 +26,9 @@ function displayData(data) {
             var p = document.createElement("p");
             parentDiv.appendChild(p);
             p.className = "msg"
+            if(data[i].bookAuthor=="") data[i].bookAuthor="数据正在更新中";
+            if(data[i].bookPress=="") data[i].bookPress="数据正在更新中";
+            if(data[i].bookDesc==null) data[i].bookDesc="数据正在更新中";
             p.innerHTML = "书名：" + data[i].bookName + '<br/>' +
                 "作者：" + data[i].bookAuthor + '<br/>' +
                 "类别：" + data[i].bookClassifyOne + '<br/>' +
@@ -38,13 +41,21 @@ function displayData(data) {
             div.innerHTML =  data[i].bookDesc;
 
              //设置借书按钮
-            var bottom = document.createElement("bottom");
-            parentDiv.appendChild(bottom);
-            bottom.className = "btn";
-            bottom.innerHTML = "借书";
-            bottom.addEventListener("click",function(e){
-            alert("借书成功")
+    //         var bottom = document.createElement("bottom");
+    //         parentDiv.appendChild(bottom);
+    //         bottom.className = "btn";
+    //         bottom.innerHTML = "在线阅读";
+    //         bottom.addEventListener("click",function(e){
+    //         window.open("/text/a.txt")
+    // })
+
+    var read=document.getElementById("read");
+            read.addEventListener("click",function(e){
+            open=window.open("/text/a.pdf");
+            open.document.charset = "UTF-8";
     })
+    
+    
 
         } else {
             continue

@@ -24,3 +24,11 @@ var displayData=function(data){
         })
     }
 }
+
+
+// $(document).ready(function(){
+//     $("li.classify").animate({
+//         height:'toggle'
+//         // height:'+=10%'
+//     });
+// });

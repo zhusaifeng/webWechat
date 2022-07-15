@@ -36,6 +36,7 @@ var displayData=function(data){
             p.className="info";
             p.id=data[i].bookId;
             p.id=data[i].a[j].bookId;
+            if(data[i].a[j].bookAuthor=="") data[i].a[j].bookAuthor="更新中..."
             p.innerHTML="书名："+data[i].a[j].bookName+'<br>'
             +"作者："+data[i].a[j].bookAuthor+'<br>'
             +"类别："+data[i].a[j].bookClassifyOne+'<br/>';

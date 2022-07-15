@@ -1,3 +1,4 @@
+
 var Ajax=function(){
     $.getJSON("/hotbook.json", function (hotbook) {
         displayData(hotbook,1)//传入一个函数

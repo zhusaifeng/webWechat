@@ -1,5 +1,5 @@
 .block1{
-    width: 296px;
+    width: 299px;
     height:150px;
     /* border: 1px solid pink; */
     background-color: lightblue;
@@ -22,7 +22,7 @@
     position: relative;
     width: 299px;
     height: 435px;
-    border: 2px solid powderblue;
+    /* border: 2px solid powderblue; */
     overflow-x:hidden;
     overflow-y: auto;
 }
@@ -33,7 +33,7 @@ ul{/*设置导航栏的框框*/
     margin: 0;
     width: 300px;
     height: 45px;
-    border: 1px solid powderblue;
+    /* border: 1px solid powderblue; */
 }
 li{
    list-style-type: none;/* 去掉li前的点 */

@@ -57,13 +57,14 @@
 
 .btn{
     position: absolute;
-    top: 410px;
-    left: 120px;
+    bottom: 25px;
+    right: 40px;
     border: 1px solid red;
-    width: 35px;
+    width: 55px;
     height: 20px;
     padding: 7px;
-    border-radius: 20%;
+    font-size: small;
+    /* border-radius: 50%; */
 }
 .p1{
     position: absolute;
