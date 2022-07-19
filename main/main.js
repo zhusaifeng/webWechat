@@ -1,8 +1,21 @@
+//使用json server接口获取数据
+var xmlhttp=new XMLHttpRequest();
+var url="http://localhost:3001/hotbook";
+var type="GET";//方法
+xmlhttp.open(type,url,true);//方法，接口，异步
+xmlhttp.send();//发送请求
+xmlhttp.onreadystatechange=function(){
+if(xmlhttp.status==200&&xmlhttp.readyState==4){
+    var hotbook=JSON.parse(xmlhttp.response); //获取到的json数据
+    displayData(hotbook,1)//传入一个函数
+}
+}
 
+//使用json获取数据
 var Ajax=function(){
-    $.getJSON("/hotbook.json", function (hotbook) {
-        displayData(hotbook,1)//传入一个函数
-    });
+    // $.getJSON("/hotbook.json", function (hotbook) {
+    //     displayData(hotbook,1)//传入一个函数
+    // });
     $.getJSON("/recommendbook.json",function(recommendbook){
         displayData(recommendbook,2);
     });
